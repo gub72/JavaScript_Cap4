@@ -1,0 +1,11 @@
+img{
+    float:left;
+    width:300px;
+}
+div{
+    float:left;
+    margin-left: 5px;
+}
+h1{
+    border-bottom-style:inset;
+}

@@ -1,0 +1,81 @@
+<script>
+    // let idade=[
+    //     18,
+    //     15
+    // ] //criando uma array
+
+    // let idade = new Array()//nao e viavel declarar dessa maneira
+    let idade = []
+    // idade=18 //nao e possivel inserir valores dessa maneira em uma array, se for fazer dessa maneira ela deixa de ser uma array
+    // idade=15
+    idade[0]=18//em uma array e necessario indicar a posicao do valor desejado
+    idade[1]=15
+
+    //metodo adicionar e remover em uma array: push, unshift, pop, shift
+    idade.push("add no final do vetor")//uma array pode ser composta por strings, numeros e outras arrays
+    idade.unshift("add no inicio do vetor")
+    console.log(idade)
+    idade.pop(idade)//removendo no final do vetor
+    idade.shift(idade)//removendo no inicio do vetor
+    console.log(idade)
+
+    //manipulando vetores com slice e splice
+
+    const letras = [`A`,`B`,`C`,`D`]
+
+    //slice nao modifica uma array
+    //slice(numero indica posicao em uma array decrescente)
+    
+    const letras2 = letras.slice(-1) //obtem a ultima letra
+    // const letras2 = letras.slice(-2) //obtem as duas ultimas letras
+    // const letras2 = letras.slice(-3) //obtem as tres ultimas letras
+    // const letras2 = letras.slice(-4) //obtem as quatro ultimas letras
+
+    //slice com intervalor, o primeiro numero positivo indica a posicao crescente na array e a segunda indica a posicao decrescente na array 
+    // const letras3 = letras.slice(0,-1) //obtem a posicao 1 na array ate a posicao 4
+    // const letras3 = letras.slice(0,-2) //obtem do inicio ate o final exceto as 2 ultimas
+    const letras3 = letras.slice(0,-3) //obtem do inicio ate o final exceto as 3 ultimas
+    // const letras3 = letras.slice(0,-4) //obtem do inicio ate o final exceto as 4 ultimas, sendo assim uma array vazia pois a array so tem 4 posicoes
+
+    console.log(letras)
+    console.log(letras2)
+    console.log(letras3)
+    
+    //splice modifica uma array
+    //splice(posicao na array, qtd de elementos)
+
+    const retira = letras.splice(1,1)//retirei apartir do segundo elemento 1 elemento
+    //const retira = letras.splice(0,4)//retirando todo conteudo da array letras
+    console.log(letras)
+    console.log(retira)
+
+    const array = [0,1,2,3]
+    console.log(array.length)
+    //for ... of
+
+    // for(const vetor of array){
+    //     console.log(vetor)
+    // }
+
+    //forEach()
+    array.forEach((vetor, i) =>{
+        console.log(`${i+1}° posicao: ${vetor}`)
+    })
+
+    let soma = 0
+    //Haveram momentos q a mlr escolha e usar o forEach(), como podemos ver abaixo:
+
+    // for(const num of array){
+    //     soma+=num
+    // }
+
+    array.forEach(num =>soma+=num)
+    
+    //os dois fazem a mesma funcao somar todos os numeros em uma array
+    console.log(`Soma dos numeros: ${soma}`)
+
+    console.log(array.indexOf(2))//funcao q procura a posicao na array do valor digitado, retorna 2
+    console.log(array.lastIndexOf(2))//funcao q retorna a posicao em uma array decrescente, retorna 2
+    console.log(array.indexOf(7))//retorna -1, pois o numero n existe na array
+    console.log(array.includes(3))//verifica se o vetor contem o valor informado, retorna true
+</script>

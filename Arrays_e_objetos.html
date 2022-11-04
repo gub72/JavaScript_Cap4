@@ -1,0 +1,68 @@
+<script>
+    const carros = []
+    carros.push({ modelo: "Sandero", preco: 46500 })
+    carros.push({ modelo: "Palio", preco: 37000 })
+
+    console.log("Criando o objeto carro:")
+    console.log(carros)
+
+    const modelo = "Fiesta"
+    const preco = 46800
+    carros.push({ modelo, preco })//inserindo um novo objeto na array carros
+
+    console.log("Inserindo um novo conteudo na array:")
+    console.log(carros)
+
+    console.log("Array carros depois do push:")
+    for (const carro of carros) {
+        console.log(`${carro.modelo} R$ ${carro.preco.toFixed(2)}`)
+    }
+    console.log("Desestruturando o objeto carro:")
+    for (const carro of carros) {
+        const { modelo, preco } = carro
+        console.log(`${modelo} R$ ${preco.toFixed(2)}`)
+    }
+
+    //em uma array contem a idade de varias pessoas e nescessario o programa mostras as idades maior do q 18 e se n houver mostrar q nao a idades maiores do q 18 anos.
+    const idades = [12, 16, 15, 17, 14, 18]
+    let maiores = false //variavel de controle
+    for (const idade of idades) {
+        if (idade >= 18) {
+            console.log(idade)
+            maiores = true//quando a condicao encontrar uma idade maior do 18 ela vai retornar true
+        }
+    }
+    if (!maiores) {
+        console.log("Nao a idades maiores do q 18 anos.")
+    }
+
+    //em uma array e nescessario o programa mostrar o dobro de uma array
+    const num = [1, 2, 3, 4, 5]
+    const dobro = num.map(n => n * 2)//
+
+    console.log(dobro.join(", "))
+
+    //em uma array de objetos e nescessario transformar a idade no ano em que a pessoa nasceu
+    const amigos = [
+        {nome:"Ana", idade:13},
+        {nome:"Bruno", idade:20},
+        {nome:"Gustavo", idade:28}
+        ]
+
+    const amigos2 = amigos.map(aux=>({nome: aux.nome, nasc: 2022-aux.idade}))//como fosse um "for"
+
+    for(const amigo of amigos2){
+        console.log(`${amigo.nome}- Nasceu em ${amigo.nasc}`)
+    }
+
+    //em uma array e nescessario armazenar apenas os numeros pares
+    const inNum = [10,13,20,14,8]
+    const pares = inNum.filter(num=>num%2==0)//como fosse um "if"
+    console.log(inNum.join(", "))
+    console.log(pares.join(", "))
+
+    //em uma array e nescessario armazenar a soma de todos os numeros em uma array
+    const soma = inNum.reduce((acumulador, n)=> acumulador+n,0)
+    console.log(soma)
+    
+</script>

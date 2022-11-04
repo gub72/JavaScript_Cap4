@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X_UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, intial-scale-1">
+    <link rel="icon" type="image/png" href="image/livrosjs.png">
+    <link rel="stylesheet" href="css/estilos6_2.css">
+</head>
+
+<body>
+    <img type="image/jpg" src="image/image6.jpg" alt="image do programa">
+    <div>
+        <h1>Jogo Descubra o Numero</h1>
+        <form>
+            <p>Numero: 
+                <input type="number" min="1" max="100" id="inNum" required autofocus>
+                <input type="submit" value="Apostar" id="btSubmit">
+                <input type="button" value="Jogar Novamente" id="btNovo" class="oculta">
+            </p>
+        </form>
+        <!-- Saida do programa -->
+        <h3>Erros: <span id="outErros">0</span></h3>
+        <h3>Chances: <span id="outChances">6</span></h3>
+        <h3 id="outDica" class="italico">Dica: E um numero de 1 a 100</h3>
+        <script src="js/ex6_2.js"></script>
+    </div>
+</body>
+
+</html>

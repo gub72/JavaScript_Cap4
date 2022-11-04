@@ -1,0 +1,14 @@
+img{
+    float:left;
+    width:300px;
+}
+h1{
+    border-bottom-style:inset;
+}
+div{
+    float:left;
+    margin-left: 5px;
+}
+.italico{
+    font-style: italic;
+}

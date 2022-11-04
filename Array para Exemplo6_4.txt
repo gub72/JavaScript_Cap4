@@ -1,0 +1,5 @@
+crianca.push({nome:"Ana",idade:3},{nome:"Juliana",idade:3},{nome:"Lucas",idade:4},{nome:"Catia",idade:6},{nome:"Marina",idade:4},{nome:"Bianca",idade:6},{nome:"Pedro",idade:6},{nome:"Joao",idade:4})
+
+clubes.push(1,2,3,4)
+
+candidato.push({nome:"Andre",acertos:35},{nome:"Bianca",acertos:29},{nome:"Carlos",acertos:27},{nome:"Debora",acertos:33},{nome:"Eduardo",acertos:36},{nome:"Fernanda",acertos:28},{nome:"Giovana",acertos:31})

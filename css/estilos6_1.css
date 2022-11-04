@@ -1,0 +1,33 @@
+img {
+    float: left;
+    width: 300px;
+}
+
+h1 {
+    border-bottom-style: inset;
+}
+
+pre {
+    font-size: 1.2em;
+}
+
+div {
+    float: left;
+    margin-left: 10px;
+}
+
+.fonte-azul {
+    color: blue;
+}
+
+.oculta {
+    display: none;
+}
+
+.exibe {
+    display: inline;
+}
+
+.italico {
+    font-style: italic;
+}
